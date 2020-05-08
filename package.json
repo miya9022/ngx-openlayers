@@ -1,6 +1,6 @@
 {
     "name": "ngx-openlayers",
-    "version": "0.8.22",
+    "version": "0.8.22-contextmenu.RC1",
     "scripts": {
         "lint": "tslint src/**/*.ts",
         "test": "echo \"No tests specified\" && exit 0",
@@ -33,6 +33,7 @@
     "typings": "./dist/index.d.ts",
     "dependencies": {
         "@types/openlayers": "4.3.x || 4.4.x",
+        "ol-contextmenu": "^4.0.1",
         "openlayers": "4.3.x || 4.4.x"
     },
     "devDependencies": {

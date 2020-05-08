@@ -1,5 +1,6 @@
 export * from './attribution.component';
 export * from './control.component';
+export * from './contextmenu.component';
 export * from './default.component';
 export * from './fullscreen.component';
 export * from './mouseposition.component';

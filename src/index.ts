@@ -21,7 +21,8 @@ import {
   OverlayComponent,
   ContentComponent,
   AttributionComponent,
-  AttributionsComponent
+  AttributionsComponent,
+  ControlContextMenuComponent
 } from './components';
 
 export * from './components';
@@ -69,6 +70,7 @@ const COMPONENTS = [
   DefaultControlComponent,
   ControlComponent,
   ControlAttributionComponent,
+  ControlContextMenuComponent,
   ControlFullScreenComponent,
   ControlMousePositionComponent,
   ControlOverviewMapComponent,
