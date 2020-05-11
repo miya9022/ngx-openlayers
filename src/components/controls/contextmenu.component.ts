@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { control } from 'openlayers';
 import { MapComponent } from '../map.component';
 
-declare const ContextMenu: any;
+declare var ContextMenu: any;
 
 export interface ContextMenuItem {
   text: string;
@@ -35,20 +35,9 @@ export class ControlContextMenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.instance = new ContextMenu({
-      width: 170,
-      defaultItems: true, // defaultItems are (for now) Zoom In/Zoom Out
-      items: [
-        {
-          text: 'Center map here',
-          // callback: center // `center` is your callback function
-        },
-        {
-          text: 'Add a Marker',
-          icon: 'img/marker.png',  // this can be relative or absolute
-          // callback: marker
-        },
-        '-' // this is a separator
-      ]
+      width: this.width,
+      defaultItems: this.defaultItems,
+      items: this.menus
     });
     this.map.instance.addControl(this.instance);
   }
